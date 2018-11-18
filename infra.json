@@ -578,7 +578,7 @@
     "autoUpgradeMinorVersion": true,
     "settings": {
       "configuration": {
-        "url": "https://raw.githubusercontent.com/sangaml/jenkinsaspass/master/hardening.zip",
+        "url": "https://raw.githubusercontent.com/sangaml/artifactory_DSC/master/hardening.zip",
          "script": "hardening.ps1",
          "function": "hardening"
       }
@@ -641,7 +641,7 @@
           "autoUpgradeMinorVersion": true,
           "settings": {
             "configuration": {
-              "url": "https://raw.githubusercontent.com/sangaml/jenkinsaspass/master/hardening.zip",
+              "url": "https://raw.githubusercontent.com/sangaml/artifactory_DSC/master/hardening.zip",
               "script": "hardening.ps1",
               "function": "hardening"
             }
