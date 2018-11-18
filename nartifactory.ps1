@@ -6,4 +6,4 @@ Start-BitsTransfer -Source "https://sonatype-download.global.ssl.fastly.net/repo
     }
   unzip "D:\nexus-3.14.0-04-win64.zip" "D:\"
 
-  D:\nexus-3.14.0-04\bin\nexus.exe start
+ D:\nexus-3.14.0-04\bin\nexus.exe /run
