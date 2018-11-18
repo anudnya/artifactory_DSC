@@ -17,14 +17,12 @@ New-AzureRmResourceGroupDeployment -Name artifactory -ResourceGroupName $RG `
                start-sleep 120
 Remove-AzurermVMCustomScriptExtension -ResourceGroupName $RG -VMName $vm -Name $customscriptname  -Force
 
-Write-Host "Installing Artifactory ..." -ForegroundColor Green
+Write-Host "Installing nexus ..." -ForegroundColor Green
                Set-AzureRmVMCustomScriptExtension -ResourceGroupName $RG `
                -VMName $vm -Name $customscriptname `
-               -FileUri "https://raw.githubusercontent.com/sangaml/artifactory_DSC/master/nartifactory.ps1" `
-               -Run "nartifactory.ps1" `
+               -FileUri "https://raw.githubusercontent.com/sangaml/artifactory_DSC/master/nexus.ps1" `
+               -Run "nexus.ps1" `
                -Location $location 
                Write-Host "Login from browser with $IP and port 8080" -ForegroundColor Green 
-               Write-Host "Login Username is admin and Password is password" -ForegroundColor Green 
+               Write-Host "Login Username is admin and Password is admin123" -ForegroundColor Green 
                Remove-AzurermVMCustomScriptExtension -ResourceGroupName $RG -VMName $vm -Name $customscriptname -Force
-               
-
