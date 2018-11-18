@@ -578,7 +578,7 @@
     "autoUpgradeMinorVersion": true,
     "settings": {
       "configuration": {
-        "url": "https://github.com/sangaml/artifactory_DSC/blob/master/artifactory.zip",
+        "url": "https://raw.githubusercontent.com/sangaml/artifactory_DSC/master/artifactory.zip",
         "script": "artifactory.ps1",
         "function": "Installartifactory"
       }
